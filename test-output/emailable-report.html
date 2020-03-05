@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="7">Test Execution</th></tr>
+<tr><td><a href="#t0">E2E Test Suite On Android - Pixel</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">5</td><td class="num">1,346</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Test Execution</th></tr></tbody><tbody id="t0"><tr><th colspan="4">E2E Test Suite On Android - Pixel &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">tests.android.BannerTest</td><td><a href="#m0">startAppiumServer</a></td><td rowspan="1">1573984977236</td><td rowspan="1">45874</td></tr><tr><th colspan="4">E2E Test Suite On Android - Pixel &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">tests.android.BannerTest</td><td><a href="#m1">bannersclick</a></td><td rowspan="1">1573985023158</td><td rowspan="1">828</td></tr><tr class="failedodd"><td rowspan="1">tests.android.ExploreAnimationTest</td><td><a href="#m2">exploreanimationSteps</a></td><td rowspan="1">1573985024107</td><td rowspan="1">24</td></tr><tr class="failedeven"><td rowspan="1">tests.android.SignoutTest</td><td><a href="#m3">signout</a></td><td rowspan="1">1573985024427</td><td rowspan="1">21</td></tr><tr class="failedodd"><td rowspan="1">tests.android.StepsTest</td><td><a href="#m4">registrationStepsTest</a></td><td rowspan="1">1573985024061</td><td rowspan="1">26</td></tr><tr class="failedeven"><td rowspan="1">tests.android.signinTest</td><td><a href="#m5">logintest</a></td><td rowspan="1">1573985023998</td><td rowspan="1">33</td></tr><tr><th colspan="4">E2E Test Suite On Android - Pixel &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="1">tests.android.BannerTest</td><td><a href="#m6">stopAppiumServer</a></td><td rowspan="1">1573985024756</td><td rowspan="1">0</td></tr></tbody>
+</table>
+<h2>E2E Test Suite On Android - Pixel</h2><h3 id="m0">tests.android.BannerTest#startAppiumServer</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>mobile</td><td>android</td><td>OnePlus 3T</td></tr><tr><th colspan="3">Exception</th></tr><tr><td colspan="3"><div class="stacktrace">org.openqa.selenium.WebDriverException: It is impossible to create a new session because &apos;createSession&apos; which takes HttpClient, InputStream and long was not found or it is not accessible
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T15:15:03.216Z&apos;
+System info: host: &apos;BLUETIE-TESTER-&apos;, ip: &apos;10.2.0.242&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_141&apos;
+Driver info: driver.version: AndroidDriver
+	at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:195)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:209)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:231)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:207)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:130)
+	at io.appium.java_client.DefaultGenericMobileDriver.&lt;init&gt;(DefaultGenericMobileDriver.java:38)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:84)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:94)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:93)
+	at com.bluetie.drivers.AndroidDriverBuilder.setupDriver(AndroidDriverBuilder.java:44)
+	at com.bluetie.common.Base.setupMobileDriver(Base.java:100)
+	at com.bluetie.common.Base.startAppiumServer(Base.java:65)
+	at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:185)
+	... 35 more
+Caused by: org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Could not sign with default certificate. Original error Command &apos;&apos;C:\\Program Files\\Java\\jdk-13.0.1\\bin\\java.exe&apos; -jar &apos;C:\\Program Files (x86)\\Appium\\resources\\app\\node_modules\\appium\\node_modules\\appium-adb\\jars\\sign.jar&apos; &apos;C:\\Program Files (x86)\\Appium\\resources\\app\\node_modules\\appium\\node_modules\\appium-uiautomator2-server\\apks\\appium-uiautomator2-server-v1.12.0.apk&apos; --override&apos; exited with code 1
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T15:15:03.216Z&apos;
+System info: host: &apos;BLUETIE-TESTER-&apos;, ip: &apos;10.2.0.242&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_141&apos;
+Driver info: driver.version: AndroidDriver
+remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Could not sign with default certificate. Original error Command &apos;&apos;C:\\Program Files\\Java\\jdk-13.0.1\\bin\\java.exe&apos; -jar &apos;C:\\Program Files (x86)\\Appium\\resources\\app\\node_modules\\appium\\node_modules\\appium-adb\\jars\\sign.jar&apos; &apos;C:\\Program Files (x86)\\Appium\\resources\\app\\node_modules\\appium\\node_modules\\appium-uiautomator2-server\\apks\\appium-uiautomator2-server-v1.12.0.apk&apos; --override&apos; exited with code 1
+    at getResponseForW3CError (C:\Program Files (x86)\Appium\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:806:13)
+    at asyncHandler$ (C:\Program Files (x86)\Appium\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:361:37)
+    at tryCatch (C:\Program Files (x86)\Appium\resources\app\node_modules\appium\node_modules\babel-runtime\regenerator\runtime.js:67:40)
+    at GeneratorFunctionPrototype.invoke [as _invoke] (C:\Program Files (x86)\Appium\resources\app\node_modules\appium\node_modules\babel-runtime\regenerator\runtime.js:315:22)
+    at GeneratorFunctionPrototype.prototype.(anonymous function) [as next] (C:\Program Files (x86)\Appium\resources\app\node_modules\appium\node_modules\babel-runtime\regenerator\runtime.js:100:21)
+    at GeneratorFunctionPrototype.invoke (C:\Program Files (x86)\Appium\resources\app\node_modules\appium\node_modules\babel-runtime\regenerator\runtime.js:136:37)
+    at &lt;anonymous&gt;
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:123)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
+	... 40 more
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">tests.android.BannerTest#bannersclick</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+	at com.bluetie.listeners.CustomListeners.onTestSkipped(CustomListeners.java:59)
+... Removed 23 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">tests.android.ExploreAnimationTest#exploreanimationSteps</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+	at com.bluetie.listeners.CustomListeners.onTestSkipped(CustomListeners.java:59)
+... Removed 23 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">tests.android.SignoutTest#signout</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+	at com.bluetie.listeners.CustomListeners.onTestSkipped(CustomListeners.java:59)
+... Removed 23 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">tests.android.StepsTest#registrationStepsTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+	at com.bluetie.listeners.CustomListeners.onTestSkipped(CustomListeners.java:59)
+... Removed 23 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">tests.android.signinTest#logintest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+	at com.bluetie.listeners.CustomListeners.onTestSkipped(CustomListeners.java:59)
+... Removed 23 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">tests.android.BannerTest#stopAppiumServer</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

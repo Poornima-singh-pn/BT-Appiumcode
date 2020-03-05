@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Test Execution" parallel="none">
+
+<listeners>
+
+		<listener class-name="com.bluetie.listeners.CustomListeners" />
+     	<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+
+	</listeners>
+
+     <parameter name="platformType" value="mobile"/>
+        <parameter name="platformName" value="ios"/>
+        <parameter name="model" value="iphone5s"/>
+
+    <test name="E2E Test Suite On iOS - iPhone5S">
+       
+         <classes> 
+        
+             <class name="tests.ios.BannerTest"/>
+         <class name="tests.ios.signinTest"/>
+             <class name="tests.ios.StepsTest"/>  
+             <class name="tests.ios.ExploreAnimationTest"/>
+            <class name="tests.ios.SignoutTest"/> 
+        </classes>
+    </test>
+</suite>

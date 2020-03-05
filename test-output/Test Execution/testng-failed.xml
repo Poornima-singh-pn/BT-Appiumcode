@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Test Execution]">
+  <parameter name="platformType" value="mobile"/>
+  <parameter name="model" value="OnePlus 3T"/>
+  <parameter name="platformName" value="android"/>
+  <listeners>
+    <listener class-name="com.bluetie.listeners.CustomListeners"/>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test thread-count="5" name="E2E Test Suite On Android - Pixel(failed)">
+    <classes>
+      <class name="tests.android.StepsTest">
+        <methods>
+          <include name="registrationStepsTest"/>
+          <include name="startAppiumServer"/>
+          <include name="stopAppiumServer"/>
+        </methods>
+      </class> <!-- tests.android.StepsTest -->
+      <class name="tests.android.ExploreAnimationTest">
+        <methods>
+          <include name="exploreanimationSteps"/>
+          <include name="startAppiumServer"/>
+          <include name="stopAppiumServer"/>
+        </methods>
+      </class> <!-- tests.android.ExploreAnimationTest -->
+      <class name="tests.android.SignoutTest">
+        <methods>
+          <include name="startAppiumServer"/>
+          <include name="signout"/>
+          <include name="stopAppiumServer"/>
+        </methods>
+      </class> <!-- tests.android.SignoutTest -->
+      <class name="tests.android.signinTest">
+        <methods>
+          <include name="logintest"/>
+          <include name="startAppiumServer"/>
+          <include name="stopAppiumServer"/>
+        </methods>
+      </class> <!-- tests.android.signinTest -->
+      <class name="tests.android.BannerTest">
+        <methods>
+          <include name="bannersclick"/>
+          <include name="startAppiumServer"/>
+          <include name="stopAppiumServer"/>
+        </methods>
+      </class> <!-- tests.android.BannerTest -->
+    </classes>
+  </test> <!-- E2E Test Suite On Android - Pixel(failed) -->
+</suite> <!-- Failed suite [Test Execution] -->

@@ -1,0 +1,48 @@
+[
+  {
+    "name": "pixel",
+    "deviceName": "emulator-5554",
+    "platformName": "Android",
+    "platformVersion": "9",
+    "automationName": "UIAutomator2",
+    "packageName": "com.bluetie.dev",
+    "activity": "com.bluetie.activity.SplashActivity",
+    "reset": true,
+    "app": "bluetie.apk"
+  },
+  {
+    "name": "nexus",
+    "deviceName": "emulator-5554",
+    "platformName": "Android",
+    "platformVersion": "8.1",
+    "automationName": "UIAutomator2",
+    "packageName": "com.bluetie.dev",
+    "activity": "com.bluetie.activity.SplashActivity",
+    "reset": true,
+    "app": "bluetie.apk"
+  },
+  
+  {
+    "name": "Redmi",
+    "deviceName": "Redmi",
+    "platformName": "Android",
+    "platformVersion": "9",
+    "automationName": "UIAutomator2",
+    "packageName": "com.bluetie.dev",
+    "activity": "com.bluetie.activity.SplashActivity",
+    "reset": true,
+    "app": "bluetie.apk"
+  },
+  {
+    "name": "OnePlus 3T",
+    "deviceName": "OnePlus 3T",
+    "platformName": "Android",
+    "platformVersion": "9",
+    "automationName": "UIAutomator2",
+    "packageName": "com.bluetie.dev",
+    "activity": "com.bluetie.activity.SplashActivity",
+    "reset": true,
+    "app": "bluetie.apk"
+  }
+  
+]

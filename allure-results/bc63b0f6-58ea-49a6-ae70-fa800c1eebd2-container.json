@@ -1,0 +1,1 @@
+{"uuid":"bc63b0f6-58ea-49a6-ae70-fa800c1eebd2","name":"Test Execution","children":["d5c5ff2a-d2b5-4ca5-8d70-aa87d92b124c"],"befores":[{"name":"startAppiumServer","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1563891037883,"stop":1563891044946}],"afters":[],"links":[],"start":1563891037698,"stop":1563891047515}
